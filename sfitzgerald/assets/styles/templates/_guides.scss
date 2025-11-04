@@ -1,0 +1,193 @@
+.template-guides {
+  padding: 50px;
+}
+
+body .large-8 .guides__forms .gform_wrapper {
+  display: flex;
+  padding-top: 115px;
+  gap: 0 40px;
+
+  .gform_title {
+    position: absolute;
+    width: 60%;
+    top: 60px;
+    left: 80px;
+  }
+
+  .gform_heading {
+    flex: 0 0 47%;
+  }
+}
+
+@media screen and (max-width: 1406px) {
+  body .large-8 .guides__forms .gform_wrapper {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1406px) {
+  body .large-8 .guides__forms .gform_wrapper {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  body .large-8 .guides__forms .gform_wrapper {
+    padding-top: 220px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body .large-8 .guides__forms .gform_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 0 20px;
+
+    .gform_title {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .gform_heading {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.page-template-template-guides {
+  .guides__forms {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: $blue;
+    }
+  }
+
+  #field_3_2 {
+    visibility: hidden;
+  }
+
+  #gform_submit_button_3 {
+    width: 100%;
+    background-color: $green !important;
+    border: 1px solid $white;
+    position: relative;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transition: all 0.4s ease;
+      filter: brightness(1.1);
+    }
+
+    &:after {
+      content: '';
+      border: 1px solid #fff;
+      height: 100%;
+      position: absolute;
+      border-radius: 0;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: #003864;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 13px);
+      background-image: url('https://sfitzgerald23.wpengine.com/wp-content/uploads/2023/04/Layer_x0020_1.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .guides__forms-questions {
+    padding: 40px 60px;
+    background-color: $blue;
+
+    .gform_description {
+      color: $white;
+      margin-bottom: 20px;
+      line-height: 22px;
+      font-size: 16px;
+    }
+
+    .gform_wrapper {
+      background-color: transparent;
+
+      .gform_title {
+        font-size: 36px;
+        text-transform: inherit;
+        color: $white !important;
+      }
+
+      .gform_fields {
+        grid-column-gap: 0 !important;
+        display: flex !important;
+        @include breakpoint(medium down) {
+          flex-direction: column;
+          grid-row-gap: 0 !important;
+        }
+
+        .gfield--type-textarea,
+        .gfield--type-email {
+          width: 85%;
+          @include breakpoint(medium down) {
+            width: 100%;
+            margin-bottom: 0.5px;
+          }
+        }
+
+        textarea {
+          height: 70px !important;
+          border: 1px solid $white !important;
+        }
+
+        #field_submit input {
+          padding: 20px !important;
+          border: 1px solid $white;
+          min-width: auto;
+          height: 70px !important;
+          @include breakpoint(medium down) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    @include breakpoint(small down) {
+      padding: 40px 60px;
+      margin: 0 -60px;
+    }
+  }
+}
+
+.guides__item {
+  padding-top: 50px;
+
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+}
+
+body.page-template-template-guides
+  .guides__forms
+  .gform_wrapper
+  .gform_fields
+  #field_3_2 {
+  grid-column: span 12 !important;
+}

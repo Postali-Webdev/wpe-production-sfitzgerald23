@@ -1,0 +1,98 @@
+.landing-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    padding: 70px 50px;
+    background: rgb(0, 56, 100);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 56, 100, 0.2497373949579832) 0%,
+      rgba(0, 56, 100, 0.865983893557423) 69%,
+      rgba(0, 56, 100, 1) 100%
+    );
+    @include breakpoint(small down) {
+      background: rgba(0, 56, 100, 0.8);
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  &__subtitle {
+    color: $yellow;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(small down) {
+      display: none;
+    }
+    .gform_wrapper {
+      padding: 20px;
+      width: 90%;
+      .gform_fields {
+        grid-row-gap: 0 !important;
+      }
+    }
+  }
+}
+.landing-table-of-contents {
+  .table-of-contents__item {
+    text-align: start;
+  }
+}
+.full-width-text-bottom {
+  padding: 100px 0;
+}
+
+.landing-testimonial {
+  .fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__left-content {
+    background-color: $dark-lite-blue;
+    padding: 40px;
+    color: $white;
+    border: 2px solid $yellow;
+    height: 100%;
+    @include breakpoint(small down) {
+      border: none;
+      border-bottom: 1px solid $yellow;
+    }
+  }
+  &__right-content {
+    padding: 40px;
+    border: 2px solid $yellow;
+    height: 100%;
+    @include breakpoint(small down) {
+      border: none;
+      border-top: 1px solid $yellow;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.page-template-template-landing {
+  .header-button {
+    justify-content: center;
+    .button {
+      min-width: 240px;
+    }
+  }
+  .header-locations__list {
+    justify-content: center;
+  }
+  .landing-hero__overlay {
+    background: rgba(17, 53, 92, 0.75);
+  }
+}

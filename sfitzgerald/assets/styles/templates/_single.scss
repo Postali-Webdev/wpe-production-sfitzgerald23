@@ -1,0 +1,43 @@
+.single-attorney-wrap {
+  padding-top: 70px;
+}
+.attorney-tabs {
+  .tabs {
+    border: none;
+    @include breakpoint(small down) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .tabs-title {
+      margin-right: 20px;
+      @include breakpoint(small down) {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      a {
+        border: 2px solid $blue;
+        color: $blue;
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 1.25rem 2.5rem;
+      }
+    }
+    .is-active a {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  .tabs-content {
+    padding-top: 40px;
+    border: none;
+    @include breakpoint(small down) {
+      padding: 25px;
+    }
+  }
+  .tabs-panel {
+    padding: 0;
+  }
+}

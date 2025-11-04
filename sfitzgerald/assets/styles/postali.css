@@ -1,0 +1,106 @@
+#mega-menu-wrap-header-menu #mega-menu-header-menu {
+    text-align: center;
+}
+
+section.mobile-form {
+  display:none;
+}
+
+@media screen and (max-width: 960px) {
+  section.mobile-form { display:block; }
+  section.mobile-form .cell { margin-top: 50px; }
+  section.mobile-form .cell .custom-sidebar__form { display:block }
+
+  /* e-book page */
+  .page-id-56101 section.mobile-form { display:none; }
+  .page-id-56101 .entry__content { margin-top: 30px; }
+  .page-id-56101 .custom-sidebar__form { display:none; }
+  .page-id-56101 .sidebar {width: 100% !important;}
+}
+
+.sidebar-mobile { margin-bottom: 20px; }
+
+/* sidebar styles - mobile */
+@media screen and (max-width: 960px) {
+  .sidebar-mobile { display:none; }
+  a.button.custom-sidebar__button { margin-bottom: 15px; width: 100%; }
+}
+
+/* header styles - mobile */
+@media screen and (max-width: 960px) {
+  .page-hero__overlay { min-height: 210px; padding: 50px 0; }
+}
+
+/* new consultation CTA */
+.consult-cta { margin: 40px 0 50px; }
+.consult-cta .consult-cta__row { background-color: #11355c; display: flex; }
+.consult-cta .consult-cta__image { flex: 0 0 32%; position: relative; }
+.consult-cta .consult-cta__image img { height: 100%; left: 0; -o-object-fit: cover; object-fit: cover; position: absolute; top: 0; width: 100%; }
+.consult-cta .consult-cta__content { align-items: center; border-left: 12px solid #80bd64; color: #fff; display: flex; flex: 0 0 68%; flex-direction: column; justify-content: center; padding: 40px 20px; text-align: center; }
+.consult-cta .consult-cta__title { color: #fff; font-size: 23px; margin-bottom: 33px; }
+.consult-cta .consult-cta__button { font-size: 15px; line-height: 1.2; max-width: 300px !important; padding: 10px; position: relative; width: 100% !important;}
+
+@media screen and (max-width: 640px) {
+  .consult-cta .consult-cta__row { flex-direction: column; }
+  .consult-cta .consult-cta__image { padding-bottom: 0; min-height: 200px; overflow: hidden; height: 100%; }
+  .consult-cta .consult-cta__content { border-left: none; border-top: 12px solid #80bd64; }
+  .consult-cta .consult-cta__title { margin-bottom: 30px; }
+}
+
+#gform_wrapper_6 { padding: 30px; }
+
+/* homepage tweaks */
+.home div#gform_wrapper_3 { flex-wrap: wrap; display: flex ; justify-content: space-between; }
+.home div#gform_wrapper_3 .gform_heading { width: 45%; }
+.home div#gform_wrapper_3 form#gform_3 { width: 45%; }
+.home div#gform_wrapper_3 .gfield .gfield-choice-input { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+
+/* new submit your case details form */
+#gform_wrapper_20 { background: #f8f8f8 !important; border: 1px solid gray; }
+#gform_wrapper_20 .gfield_radio { text-align: left; }
+#gform_wrapper_20 .gfield_label { display: block !important; text-align: left; }
+
+@media screen and (max-width: 960px) {
+  .home div#gform_wrapper_3 { flex-wrap: nowrap; display: block; }
+  .home div#gform_wrapper_3 .gform_heading { width: 100%; margin-bottom: 20px; }
+  .home div#gform_wrapper_3 form#gform_3 { width: 100%; }
+}
+
+.home .guides-section { padding: 50px 0; }
+.home .guides-section__content-wrap { display: flex; justify-content: space-between; margin-top: 20px; }
+.home .guides-section__content-wrap  .guides-section__content picture { max-height: 200px; overflow: hidden; width: 100%; height: 100%; }
+.home .guides-section__content-wrap  .guides-section__content picture img { -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; height: 100%; width: 100%; }
+.home .guides-section__content, .home .guides-section__forms-newsletter { width: 49%; margin: 0; padding-right: 0; border:none; }
+.home .guides-section__forms-newsletter { padding: 25px; }
+.home #input_2_2_1 { width:-webkit-fit-content; width:-moz-fit-content; width:fit-content; }
+
+@media screen and (max-width: 960px) {
+  .home .ginput_container { margin-bottom: 10px; }
+}
+
+@media screen and (max-width: 820px) {
+  .home .guides-section__content-wrap { flex-wrap: wrap; }
+  .home .guides-section__content, .home .guides-section__forms-newsletter { width:100%; }
+  .home .guides-section__content { padding:0 20px 40px; }
+}
+
+/* hide book download on book download page */
+.page-id-56101 .custom-sidebar .block_3 { display:none; }
+
+/* PPC page edits */
+.page-template-template-landing .full-width-text:not(.full-width-text-bottom) { margin-top: 10px; }
+.page-template-template-landing .landing-hero__subtitle { font-size: 18px; }
+.page-template-template-landing .text-image { padding: 45px; }
+.page-template-template-landing .text-image .grid-container { padding-top: 0; }
+.page-template-template-landing .text-image .grid-x .cell.large-12 { margin: 0 auto; text-align: center; }
+.page-template-template-landing .text-image .grid-x .cell.large-12 ul { -moz-column-count: 2; column-count: 2; list-style: none; }
+.page-template-template-landing .text-image .grid-x .cell.large-12 ul li { margin-bottom: 15px; }
+.page-template-template-landing .text-image .grid-x .cell.large-12 ul li a { width: 100%; display: block; background: #003864; font-size: 14px; text-transform: uppercase; border-radius: 5px; line-height: 100%; text-decoration: none; color: white; font-weight: bold; transition: .2s ease all; padding: 15px; }
+.page-template-template-landing .text-image .grid-x .cell.large-12 ul li a:hover { background: #98CA8D; text-decoration: underline; }
+.page-template-template-landing .banner-shortcode { background: #80bd64; border-radius: 10px; margin-bottom: 20px; padding: 15px 35px 12px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 30px auto !important; line-height: 0; }
+.page-template-template-landing .banner-shortcode__title { font-size: 24px; line-height: normal; }
+
+@media screen and (max-width: 960px) {
+  .page-template-template-landing .full-width-text:not(.full-width-text-bottom) { margin-top: 40px; }
+  .page-template-template-landing .text-image .grid-x .cell.large-12 ul { -moz-column-count: 1; column-count: 1; }
+}

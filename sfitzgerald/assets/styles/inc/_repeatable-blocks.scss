@@ -1,0 +1,345 @@
+/* ---------------------------------------
+	Social networks
+--------------------------------------- */
+
+.stay-tuned {
+  @include list-unstyled;
+
+  margin-right: -5px;
+  margin-left: -5px;
+  font-size: 0;
+}
+
+.stay-tuned__item {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.stay-tuned__link {
+  display: block;
+
+  .fab {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------------------
+	Side by side
+--------------------------------------- */
+
+.sbs-block {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &--reverse {
+    .cell.sbs-block__img-wrap {
+      right: 50%;
+      left: 0;
+    }
+  }
+}
+
+.sbs-block__content-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.sbs-block__content {
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(medium) {
+    min-height: 400px;
+  }
+}
+
+.sbs-block__content-inner {
+  width: 100%;
+}
+
+.cell.sbs-block__img-wrap {
+  @include breakpoint(medium) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+  }
+
+  @include breakpoint(small down) {
+    margin-bottom: 25px;
+  }
+}
+
+.sbs-block__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------
+	Breadcrumbs
+--------------------------------------- */
+#breadcrumbs {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* ---------------------------------------
+	Shortcodes
+--------------------------------------- */
+.shortcode-bg {
+  background-color: $dark-lite-blue;
+  padding: 30px 0;
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(small down) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &__link {
+    color: $white;
+
+    a:hover {
+      color: $green;
+    }
+  }
+}
+
+.shortcode-no-bg {
+  padding: 30px 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include breakpoint(small down) {
+      flex-direction: column;
+      margin-right: 25px;
+      margin-left: 25px;
+      .item-count-1 {
+        margin-top: -85px;
+      }
+      .item-count-3 {
+        margin-bottom: -60px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(small down) {
+      background-color: $white;
+      padding: 20px;
+    }
+  }
+
+  &__icon {
+    margin-top: -66px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    background-color: $white;
+
+    img {
+      &:hover {
+        background-color: $green;
+        border-radius: 50%;
+      }
+    }
+
+    @include breakpoint(small down) {
+      margin-top: 0;
+    }
+  }
+}
+
+.banner-shortcode {
+  background: $green;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 15px;
+
+  &__title {
+    color: $white;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+.main-overlay {
+  &::after {
+    background-color: #000000b3;
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+.grid-container.fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.pagination li a,
+ul.pagination li span {
+  border: 1px solid $green;
+  padding: 8px 15px;
+  color: $green;
+  font-weight: 400;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+ul.pagination li a.current,
+ul.pagination li span.current {
+  background-color: $green;
+  padding: 8px 15px;
+}
+
+.calc-cta {
+  margin: 40px 0 50px;
+
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    background-color: $dark-blue;
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    flex: 0 0 32%;
+    position: relative;
+    @include breakpoint(small down) {
+      padding-bottom: 60%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    flex: 0 0 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    border-left: 12px solid $green;
+    @include breakpoint(small down) {
+      border-left: none;
+      border-top: 12px solid $green;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 23px;
+    margin-bottom: 33px;
+    @include breakpoint(small down) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__button {
+    max-width: 300px !important;
+    line-height: 1.2;
+    padding: 10px;
+    font-size: 15px;
+    width: 100% !important;
+    position: relative;
+    @include breakpoint(450px down) {
+      max-width: 220px !important;
+      min-width: unset !important;
+    }
+
+    &:hover {
+      border: 1px solid $white;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      transform: translate(100%, -100%);
+      display: block;
+      width: 45px;
+      height: 45px;
+      background-image: url('../../images/button-highlight.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 50% 50%;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.media {
+  &__wrap {
+    display: flex;
+    width: 100%;
+    @include breakpoint(medium down) {
+      flex-direction: column;
+    }
+  }
+
+  &__video {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(medium down) {
+      width: 100%;
+    }
+  }
+
+  &__video-gallery {
+    max-width: 85%;
+    width: 100%;
+    @include breakpoint(small down) {
+      max-width: 100%;
+    }
+  }
+
+  &__video-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 55px 25px;
+    background-color: rgba($dark-lite-blue, 0.75);
+    @include breakpoint(medium down) {
+      padding: 80px 45px;
+    }
+    @include breakpoint(small down) {
+      padding: 40px 15px;
+    }
+  }
+
+  &__video-title {
+    color: $white;
+    font-size: 36px;
+  }
+
+  &__book {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include breakpoint(medium down) {
+      width: 100%;
+    }
+  }
+
+  &__book-overlay {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px;
+    background-color: rgba($blue, 0.75);
+    gap: 30px;
+    @include breakpoint(small down) {
+      flex-direction: column;
+      padding: 40px 0;
+    }
+  }
+
+  &__book-image {
+    width: 40%;
+    @include breakpoint(small down) {
+      width: 85%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__book-content {
+    width: 100%;
+    text-align: center;
+    color: $white;
+
+    .button {
+      margin: 0 auto;
+    }
+
+    @include breakpoint(small down) {
+      width: 90%;
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.video-play {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%2380bd64;fill-rule:evenodd;%7D.cls-2%7Bfill:%23ffffff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M11,22A11,11,0,1,0,0,11,11,11,0,0,0,11,22Z'/%3E%3Cpath class='cls-2' d='M15,11,9,15.33V6.67Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.video-play:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,17 @@
+.map {
+  padding: 130px 0;
+  @include breakpoint(medium down) {
+    padding: 80px 0 0;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__item {
+    @include breakpoint(medium down) {
+      margin-bottom: 30px;
+    }
+  }
+  iframe {
+    box-shadow: 6px 4px 16px 0 #33333361;
+  }
+}

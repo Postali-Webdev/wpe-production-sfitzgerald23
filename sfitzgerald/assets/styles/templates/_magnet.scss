@@ -1,0 +1,538 @@
+body.page-template-template-magnet main.main-content .grid-container {
+  max-width: 1200px;
+}
+
+.guide-hero {
+  &__container {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    color: $black;
+    margin-top: 65px;
+    text-align: center;
+    font-size: 64px;
+    line-height: 1.1;
+    @include breakpoint(medium down) {
+      font-size: 50px;
+      margin-top: 110px;
+    }
+    @include breakpoint(small down) {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subtitle {
+    color: $black;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Metropolis-Light';
+    text-transform: none;
+    font-size: 32px;
+    line-height: 1.3;
+    @include breakpoint(medium down) {
+      font-size: 26px;
+    }
+    @include breakpoint(medium down) {
+      font-size: 22px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+.graphic {
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0 20px;
+    @include breakpoint(medium down) {
+      margin: 20px 0 20px;
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      margin: 20px 0 15px;
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Metropolis-Light';
+    text-transform: none;
+    line-height: 1.2;
+    @include breakpoint(medium down) {
+      font-size: 23px;
+    }
+    @include breakpoint(small down) {
+      font-size: 20px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      max-height: 750px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+.img-w-text {
+  background-color: #f3f8fd;
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    @include breakpoint(medium down) {
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    @include breakpoint(768px down) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    flex: 0 0 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    flex: 0 0 50%;
+    padding: 50px 0 50px 50px;
+    font-size: 27px;
+    @include breakpoint(medium down) {
+      font-size: 23px;
+      padding: 25px 0 25px 30px;
+    }
+    @include breakpoint(768px down) {
+      padding: 25px 25px 40px;
+    }
+    @include breakpoint(small down) {
+      padding: 15px 15px 30px;
+    }
+  }
+
+  &__item:nth-child(even) {
+    flex-direction: row-reverse;
+    @include breakpoint(768px down) {
+      flex-direction: column;
+    }
+
+    .img-w-text__text {
+      padding: 50px 50px 50px 0;
+      @include breakpoint(medium down) {
+        font-size: 23px;
+        padding: 25px 25px 25px;
+      }
+      @include breakpoint(768px down) {
+        padding: 25px 25px 40px;
+      }
+      @include breakpoint(small down) {
+        padding: 15px 15px 30px;
+      }
+    }
+  }
+}
+
+.guide-list {
+  &__container {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0 20px;
+    @include breakpoint(medium down) {
+      margin: 20px 0 20px;
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      font-size: 32px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    @include breakpoint(medium down) {
+      gap: 10px;
+    }
+    @include breakpoint(small down) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    &-icon {
+      flex: 0 0 150px;
+      @include breakpoint(medium down) {
+        flex: 0 0 125px;
+      }
+      @include breakpoint(small down) {
+        flex: 0 0 100px;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+    }
+
+    &-text {
+      font-size: 24px;
+      @include breakpoint(small down) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.resources {
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0 20px;
+    @include breakpoint(medium down) {
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      margin: 20px 0 15px;
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Metropolis-Light';
+    text-transform: none;
+    line-height: 1.2;
+    @include breakpoint(medium down) {
+      font-size: 23px;
+    }
+    @include breakpoint(small down) {
+      font-size: 20px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+  &__btn {
+    flex: 0 0 calc(33% - 11px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue;
+    border: 1px solid $dark-blue;
+    color: $white;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    font-weight: 700;
+
+    &:hover {
+      transition: all 0.4s ease;
+      background-color: $white;
+      color: $dark-blue;
+    }
+
+    @include breakpoint(medium down) {
+      flex: 0 0 calc(50% - 11px);
+    }
+    @include breakpoint(small down) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.points {
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0 20px;
+    @include breakpoint(medium down) {
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      margin: 20px 0 15px;
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Metropolis-Light';
+    text-transform: none;
+    line-height: 1.2;
+    @include breakpoint(medium down) {
+      font-size: 23px;
+    }
+    @include breakpoint(small down) {
+      font-size: 20px;
+    }
+  }
+
+  &__items {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -30px;
+  }
+
+  &__item {
+    flex: 0 0 33.333%;
+    padding: 0 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 12px;
+    @include breakpoint(medium down) {
+      flex: 0 0 50%;
+    }
+    @include breakpoint(small down) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__icon {
+    max-height: 155px;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark-blue;
+    font-size: 21px;
+  }
+}
+
+.pros-cons {
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0 40px;
+    @include breakpoint(medium down) {
+      font-size: 40px;
+    }
+    @include breakpoint(small down) {
+      margin: 20px 0 35px;
+      font-size: 32px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 23px;
+    position: relative;
+    @include breakpoint(medium down) {
+      flex-direction: column;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 110px;
+      height: 110px;
+      background-color: $white;
+      border-radius: 50%;
+      z-index: 1;
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 90px;
+      height: 90px;
+      background-color: $white;
+      border-radius: 50%;
+      z-index: 2;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23bbbbbb' d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 55% 55%;
+      background-position: 46% 50%;
+      box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.35);
+      @include breakpoint(medium down) {
+        display: none;
+      }
+    }
+  }
+
+  &__col {
+    flex: 1 0 calc(50% - 23px);
+    color: $white;
+    text-align: center;
+    padding: 40px 50px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    @include breakpoint(small down) {
+      padding: 20px;
+    }
+  }
+
+  .col-pros {
+    background-color: $green;
+
+    &__heading {
+      color: $white;
+      padding-bottom: 15px;
+      font-size: 30px;
+      border-bottom: 1px solid $white;
+      @include breakpoint(small down) {
+        font-size: 28px;
+      }
+    }
+
+    &__items {
+      padding: 15px 30px 0;
+      @include breakpoint(small down) {
+        padding: 15px 0 0;
+      }
+    }
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      @include breakpoint(small down) {
+        font-size: 21px;
+      }
+    }
+
+    &__description {
+      font-size: 23px;
+    }
+  }
+
+  .col-cons {
+    background-color: $dark-blue;
+
+    &__heading {
+      color: $white;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $white;
+      font-size: 30px;
+      @include breakpoint(small down) {
+        font-size: 28px;
+      }
+    }
+
+    &__items {
+      padding: 15px 30px 0;
+      @include breakpoint(small down) {
+        padding: 15px 0 0;
+      }
+    }
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      @include breakpoint(small down) {
+        font-size: 21px;
+      }
+    }
+
+    &__description {
+      font-size: 23px;
+    }
+  }
+}

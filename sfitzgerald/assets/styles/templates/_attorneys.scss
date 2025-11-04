@@ -1,0 +1,78 @@
+.attorneys-wrap {
+  padding: 100px 30px 0 0;
+  border-right: 2px solid $yellow;
+  border-bottom: 2px solid $yellow;
+  @include breakpoint(small down) {
+    border-right: none;
+    padding: 100px 0;
+  }
+}
+
+.attorney-item {
+  margin-bottom: 60px;
+
+  &__image {
+    height: 225px;
+    width: 245px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 10px 0 #33333354;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: $black;
+    line-height: 39px;
+    margin-bottom: 8px;
+  }
+
+  &__placeholder {
+    background-repeat: no-repeat;
+    background-image: url('../../images/staff-placeholder.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+}
+
+.page-template-template-attorneys .shortcode-bg,
+.page-template-template-staff .shortcode-bg {
+  width: 100%;
+  border-right: 2px solid $yellow;
+  @include breakpoint(small down) {
+    border-right: none;
+  }
+}
+
+.single-hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.single-hero__badges-item {
+  position: relative;
+}
+
+.single-hero__badges-item img {
+  max-width: 200px;
+  max-height: 95px;
+  width: auto;
+  object-fit: unset;
+}
+
+.single-hero__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .single-hero__badges {
+    justify-content: center;
+  }
+}

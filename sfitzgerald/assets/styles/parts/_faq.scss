@@ -1,0 +1,61 @@
+.faq-section {
+  padding: 70px 0 130px;
+  &__title,
+  &__sub-title {
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  &__slider {
+    @include breakpoint(small down) {
+      margin-top: 40px;
+    }
+  }
+  &__item {
+    height: 310px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    border: 1px solid $lite-blue;
+    position: relative;
+  }
+  &__item-title {
+    color: $green;
+  }
+
+  /* the slides */
+  .slick-slide {
+    margin: 0 0 0 20px;
+    width: 270px;
+  }
+
+  .slick-list {
+    padding: 0 0 50px 20px !important;
+  }
+  .slick-current {
+    background-color: rgba(#f3f8fd, 1);
+  }
+  &__slider-nav-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    @include breakpoint(small down) {
+      display: none;
+    }
+    i {
+      color: #80bd64;
+      font-size: 35px;
+    }
+  }
+  &__button {
+    position: absolute;
+    bottom: -25px;
+    @include breakpoint(small down) {
+      width: 85%;
+    }
+  }
+}

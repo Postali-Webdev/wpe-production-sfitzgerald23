@@ -1,0 +1,41 @@
+.awards {
+  padding: 40px 0 40px;
+  @include breakpoint(small down) {
+    padding: 40px 0 40px 0;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @include breakpoint(medium down) {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @include breakpoint(large up) {
+    .slick-list {
+      width: 100%;
+    }
+    .slick-track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slick-slide {
+      display: flex !important;
+      justify-content: center;
+    }
+  }
+}

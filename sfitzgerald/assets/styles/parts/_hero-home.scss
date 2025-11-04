@@ -1,0 +1,169 @@
+.hero-home {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 186px;
+  @include breakpoint(medium down) {
+    margin-bottom: 20px;
+  }
+
+  &__overlay {
+    padding: 45px 0 40px 0;
+    background: rgb(0, 56, 100);
+    background: linear-gradient(
+      270deg,
+      rgba(0, 56, 100, 1) 2%,
+      rgba(0, 56, 100, 0.5018382352941176) 100%
+    );
+    @include breakpoint(small down) {
+      background: rgba(0, 56, 100, 0.8);
+    }
+  }
+
+  &__content {
+    color: $white;
+
+    .button {
+      font-weight: 400;
+      min-width: 300px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &__sub-title {
+    color: $yellow;
+  }
+
+  &__form-button {
+    margin-top: 10px;
+  }
+
+  &__locations-button {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    width: fit-content;
+
+    &::before {
+      content: '';
+      background-image: url('../images/pin.png');
+      width: 56px;
+      height: 56px;
+      display: block;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__form {
+    position: relative;
+    height: 50%;
+    pointer-events: none;
+    @include breakpoint(medium down) {
+      display: none;
+    }
+
+    .gform_wrapper {
+      padding: 20px 15px;
+      position: relative;
+      margin: 30px 0 -225px;
+      pointer-events: all;
+
+      .gform_fields {
+        grid-row-gap: 0 !important;
+      }
+
+      .gfield {
+        margin-bottom: 5px !important;
+      }
+
+      textarea {
+        height: 66px !important;
+      }
+    }
+  }
+}
+
+.hero-map {
+  position: relative;
+  max-width: 600px;
+  padding-top: 10px;
+  @include breakpoint(small down) {
+    display: none;
+  }
+
+  img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .map-popover {
+    overflow: hidden;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .map-pointer {
+    cursor: pointer;
+    height: 80px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80px;
+  }
+
+  .pin-container {
+    display: block;
+  }
+
+  .pin {
+    background-image: url('../images/pin.png');
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  .map-popup-content {
+    position: relative;
+    left: 70px;
+    top: -40px;
+    visibility: hidden;
+    transition: all 0.4s;
+    opacity: 0;
+  }
+
+  .map-popover {
+    background-color: $white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 250px;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 300;
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $dark-lite-blue;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.map-pointer:hover .map-popup-content {
+  visibility: visible;
+  opacity: 1;
+}

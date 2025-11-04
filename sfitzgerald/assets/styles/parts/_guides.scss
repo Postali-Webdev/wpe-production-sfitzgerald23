@@ -1,0 +1,163 @@
+.guides-section {
+  padding: 200px 0 70px 0;
+  @include breakpoint(medium down) {
+    padding: 60px 0 30px;
+  }
+
+  .grid-x .cell:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-x .cell:first-child .guides-section__forms-newsletter {
+    flex: 1 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    //height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin: 0 0 65px 0;
+    @include breakpoint(medium down) {
+      padding: 0 40px 30px;
+    }
+  }
+
+  &__forms {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__forms-newsletter {
+    padding: 40px 60px 10px;
+    background-color: $dark-lite-blue;
+    border-right: 2px solid $yellow;
+  }
+
+  #gform_2 {
+    background-color: transparent;
+  }
+
+  &__forms-questions {
+    padding: 40px 60px;
+    background-color: $blue;
+    height: 100%;
+
+    #field_submit #gform_submit_button_3 {
+      height: 70px !important;
+      padding: 20px !important;
+    }
+  }
+
+  .gform_description {
+    color: $white;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  .gform_wrapper {
+    background-color: transparent;
+
+    .gform_title {
+      font-size: 36px;
+      text-transform: inherit;
+    }
+
+    .gform_fields {
+      grid-column-gap: 0 !important;
+      display: flex !important;
+      @include breakpoint(medium down) {
+        flex-direction: column;
+        grid-row-gap: 0 !important;
+      }
+
+      .gfield--type-textarea,
+      .gfield--type-email {
+        width: 85%;
+        @include breakpoint(medium down) {
+          width: 100%;
+          margin-bottom: 0.5px;
+        }
+      }
+
+      textarea {
+        height: 120px !important;
+        border: 1px solid $white !important;
+      }
+
+      input {
+        height: 40px !important;
+        border: 1px solid $white !important;
+        @include breakpoint(medium down) {
+          width: 100%;
+        }
+      }
+
+      #field_submit input {
+        padding: 6.5px 20px !important;
+        border: 1px solid $white;
+        min-width: auto;
+        @include breakpoint(medium down) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .gform_footer {
+    display: flex;
+    justify-content: flex-start;
+
+    #gform_submit_button_3 {
+      flex: 0 0 100%;
+      position: relative;
+      background-color: $green !important;
+      border: 1px solid $white;
+      padding-right: 17%;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transition: all 0.4s ease;
+        filter: brightness(1.1);
+      }
+
+      &:after {
+        content: '';
+        border-left: 1px solid #fff;
+        height: 100%;
+        position: absolute;
+        border-radius: 0;
+        right: 0;
+        top: 0;
+        left: auto;
+        width: 20%;
+        background-color: #003864;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 6.5%;
+        top: 13px;
+        background-image: url('https://sfitzgerald23.wpengine.com/wp-content/uploads/2023/04/Layer_x0020_1.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+body
+  .guides-section
+  .guides-section__forms-questions
+  .gform_wrapper
+  .gform_fields
+  #field_3_2 {
+  grid-column: span 12 !important;
+}

@@ -1,0 +1,112 @@
+.template-faq {
+  padding: 50px 0;
+}
+
+.template-faq__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  @include breakpoint(medium down) {
+    flex-direction: column;
+  }
+}
+
+.template-faq__thumbnail {
+  width: 35%;
+  @include breakpoint(medium down) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.template-faq__content {
+  width: 65%;
+  @include breakpoint(medium down) {
+    width: 100%;
+  }
+}
+
+.template-faq__content-full-width {
+  width: 100%;
+}
+
+.template-faq__image {
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+}
+
+.category-dropdown {
+  margin-bottom: 40px;
+
+  select {
+    width: 100%;
+    height: 2.875rem;
+    margin: 0 auto 1rem;
+    padding: 0.625rem 0.9375rem;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #003864;
+    background-image: url('../images/arrow-down.svg');
+    background-origin: content-box;
+    background-position: right 0rem center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+    transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out,
+      -webkit-box-shadow 0.5s;
+
+    option {
+    }
+  }
+}
+
+.js-faq-pagination a.page-numbers,
+.js-faq-pagination span.page-numbers {
+  border: 1px solid #80bd64;
+  color: #80bd64;
+  font-weight: 400;
+  padding: 8px 15px;
+  margin: 0 3px;
+}
+
+.js-faq-pagination a.current,
+.js-faq-pagination span.current {
+  background-color: #80bd64;
+  padding: 8px 15px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.js-faq-pagination a.page-numbers:hover {
+  background-color: #80bd64;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.page-template-template-faq .category-dropdown {
+  padding: 40px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  @include breakpoint(small down) {
+    padding: 25px 15px 5px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

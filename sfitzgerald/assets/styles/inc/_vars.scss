@@ -1,0 +1,65 @@
+// Project variables
+// Note: Prefer using framework variables
+
+$dark-blue: #11355c;
+$dark-lite-blue: #003864;
+$blue: #2771b8;
+$lite-blue: #88b9e4;
+$green: #80bd64;
+$yellow: #ffea0c;
+$text-color: #333;
+$black: #000000;
+$gray: #eaeaea;
+
+$primary-color: $dark-blue;
+$sub-color: $green;
+
+$font: 'Gotham', Helvetica, Roboto, Arial, sans-serif;
+$second-font: 'Gotham-Book', Helvetica, Roboto, Arial, sans-serif;
+$sub-font: 'utopia-std-display', sans-serif;
+
+$fa: 'Font Awesome 6 Free';
+//$fab: 'Font Awesome 6 Brands';
+
+// Font Awesome Vars
+//$fa-font-display: swap;
+
+// Project mixins
+
+// Custom fonts
+:root {
+  --content-size: rem-calc(1200px);
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/Gotham-Font/Gotham-Bold.ttf') format('ttf');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/Gotham-Font/Gotham-Light.ttf') format('ttf');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/Gotham-Font/Gotham-Medium.ttf') format('ttf');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../../fonts/Gotham-Font/Gotham-Book.ttf') format('ttf');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}

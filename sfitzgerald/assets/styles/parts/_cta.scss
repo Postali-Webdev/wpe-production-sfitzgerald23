@@ -1,0 +1,41 @@
+.cta {
+  border-top: 15px solid $yellow;
+  background-color: #f8f8f8;
+  padding: 45px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    padding: 35px;
+    position: relative;
+    &:not(:last-child) {
+      @include breakpoint(medium down) {
+        margin-bottom: 50px;
+      }
+    }
+    .button {
+      white-space: normal;
+    }
+  }
+  &__item-title {
+    position: absolute;
+    top: -25px;
+    background-color: #f8f8f8;
+    padding: 10px 30px;
+    white-space: nowrap;
+    @include breakpoint(small down) {
+      font-size: 18px;
+      padding: 10px 15px;
+    }
+  }
+}

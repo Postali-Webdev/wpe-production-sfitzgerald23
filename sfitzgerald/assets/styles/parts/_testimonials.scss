@@ -1,0 +1,103 @@
+.testimonials {
+  padding: 110px 0 90px 0;
+
+  .fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+
+    p {
+      width: 75%;
+      margin: 10px auto;
+      @include breakpoint(small down) {
+        width: 55%;
+      }
+    }
+
+    a > svg {
+      margin: 0 0 6px !important;
+      width: 50px;
+      height: 50px;
+
+      image {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+
+  &__arrows-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin-top: 60px;
+
+    i {
+      font-size: 30px;
+      color: $green;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    @include breakpoint(small down) {
+      a {
+        width: auto;
+      }
+    }
+  }
+}
+
+.testimonials__slider .slick-list::before,
+.testimonials__slider .slick-list::after {
+  content: '';
+  width: 15%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  @include breakpoint(small down) {
+    content: none;
+  }
+}
+
+.testimonials__slider .slick-list::before {
+  left: 0;
+}
+
+.testimonials__slider .slick-list::after {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 1) 85%
+  );
+  right: 0;
+}
+
+.testimonials__slider .slick-slide {
+  width: 1300px;
+  @include breakpoint(1441px down) {
+    width: 650px;
+  }
+}
+
+//
+//.testimonials__slider .slick-list {
+//  /*margin: 0 -70px;*/
+//  padding: 0 20% !important;
+//}
