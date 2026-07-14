@@ -104,3 +104,6 @@ section.mobile-form {
   .page-template-template-landing .full-width-text:not(.full-width-text-bottom) { margin-top: 40px; }
   .page-template-template-landing .text-image .grid-x .cell.large-12 ul { -moz-column-count: 1; column-count: 1; }
 }
+
+.page-id-46112 .table-of-contents { background-color: transparent; }
+.page-id-46112 .table-of-contents .table-of-contents__list { box-shadow: none; position: relative; top: -25px; display:block; }
