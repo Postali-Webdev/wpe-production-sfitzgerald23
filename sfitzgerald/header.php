@@ -19,10 +19,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/ffm8ytn.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
 
+    <?php if(is_page( 8 )) { ?>
+    <link rel="preload" as="image" href="/wp-content/uploads/2023/05/Shreveport-hero.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="/wp-content/uploads/2023/05/Shreveport-hero.jpg.webp" fetchpriority="high">
+    <?php } ?>
+
     <?php wp_head(); ?>
 
 
-    <?php 
+    <?php
     // Global Schema
     $global_schema = get_field('global_schema', 'options');
     if ( !empty($global_schema) ) :
@@ -165,7 +170,7 @@
 							}?>
 							<span class="show-for-sr"><?php echo get_bloginfo('name'); ?></span>
                         </div>
-						
+
 						<?php wp_nav_menu(array(
 							'menu' => 2,
                             'menu_id' => 2,
