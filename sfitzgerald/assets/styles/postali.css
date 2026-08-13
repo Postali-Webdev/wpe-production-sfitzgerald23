@@ -107,3 +107,7 @@ section.mobile-form {
 
 .table-of-contents { background-color: transparent; }
 .table-of-contents .table-of-contents__list { box-shadow: none; position: relative; top: -25px; display:block; }
+
+/* staff landing page */
+
+.page-template-template-staff .attorney-item.text-center a img { -o-object-fit: cover; object-fit: cover; height: 100%; width: 100%; }
