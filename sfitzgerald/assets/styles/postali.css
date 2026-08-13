@@ -110,3 +110,5 @@ section.mobile-form {
 
 /* staff landing page */
 .page-template-template-staff .attorney-item.text-center a img { -o-object-fit: cover; object-fit: cover; height: 100%; width: 100%; aspect-ratio: 1/1; }
+.single-staff .single-hero__thumbnail { overflow: hidden; }
+.single-staff .single-hero__thumbnail img { -o-object-fit: cover; object-fit: cover; height: 100%; width: 100%; }
