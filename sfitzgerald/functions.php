@@ -460,3 +460,14 @@ function postali_remove_customizer_additional_css_section( $wp_customize ) {
     }
 }
 add_action( 'customize_register', 'postali_remove_customizer_additional_css_section', 20 );
+
+add_filter( 'gform_submit_button', 'fix_gravity_forms_button', 10, 2 );
+function fix_gravity_forms_button( $button, $form ) {
+    // Get the clean text label configured in your form settings
+    $button_text = rgar( $form, 'button/text' ) ? rgar( $form, 'button/text' ) : __( 'Submit', 'gravityforms' );
+
+    // Rebuild your custom button element cleanly from scratch
+    return "<button type='submit' id='gform_submit_button_{$form['id']}' class='button custom-class-here'>
+                <span>{$button_text}</span>
+            </button>";
+}
